@@ -27,7 +27,6 @@ function VisaForm() {
     const message = `Demande de visa étudiant\nNom complet: ${formData.fullName}\nAdresse e-mail: ${formData.email}\nPays de résidence: ${formData.country}\nUniversité souhaitée: ${formData.university}\nProgramme d'études: ${formData.course}`;
     
     // Rediriger vers WhatsApp ou Gmail avec le message pré-rempli
-    const whatsappURL = `whatsapp://send?text=${encodeURIComponent(message)}`;
     const gmailURL = `mailto:adresse@email.com?subject=Demande%20de%20visa%20étudiant&body=${encodeURIComponent(message)}`;
     
     // Choix de rediriger vers WhatsApp ou Gmail (à adapter selon tes besoins)

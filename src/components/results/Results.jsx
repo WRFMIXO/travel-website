@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+import "../../assets/styles/Results.css";
 
 const ResultsTestimonialsSection = () => {
   // Exemple de taux de réussite des visas par pays
@@ -16,44 +17,65 @@ const ResultsTestimonialsSection = () => {
   ];
 
   return (
-    <div className="bg-light py-5">
+    <div className=" py-5">
       <Container>
-        <h2 className="text-center mb-4">Résultats et Témoignages</h2>
+        <h2 className=" mb-4" style={{ fontSize: "45px", textAlign: "right", color: "blue",}}>Résultats et Témoignages</h2>
         <Row className="justify-content-center">
+          {/* Success Rates */}
           <Col md={6} className="mb-4">
-            <Card>
-              <Card.Body>
-                <h4>Taux de réussite des visas par pays</h4>
-                {successRates.map((result, index) => (
-                  <p key={index}>{result.country}: {result.successRate}</p>
-                ))}
-              </Card.Body>
-            </Card>
+            <Row>
+              {successRates.map((result, index) => (
+                <Col key={index} md={4} className="mb-4">
+                  <Card className="h-100">
+                    <Card.Body>
+                      <Card.Text>{result.country}: {result.successRate}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
           </Col>
-          <Col md={6} className="mb-4">
-            <Card>
-              <Card.Body>
-                <h4>Témoignages</h4>
-                {testimonials.map((testimonial, index) => (
-                  <div key={index} className="mb-3">
-                    <h5>{testimonial.name}</h5>
-                    <p>"{testimonial.quote}"</p>
+          {/* Testimonials */}
+          <Col md={12} className="mb-4">
+            <Row>
+              {testimonials.map((testimonial, index) => (
+                <Col key={index} md={6} className="mb-4">
+                  <div className="flip-card">
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
+                        <Card className="h-100">
+                          <Card.Body>
+                            <Card.Title>{testimonial.name}</Card.Title>
+                            <Card.Text>"{testimonial.quote}"</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      </div>
+                      <div className="flip-card-back">
+                        
+                      </div>
+                    </div>
                   </div>
-                ))}
-                <Form>
-                  <Form.Group controlId="formName">
-                    <Form.Label>Votre nom</Form.Label>
-                    <Form.Control type="text" placeholder="Entrez votre nom" />
-                  </Form.Group>
-                  <Form.Group controlId="formTestimonial">
-                    <Form.Label>Votre témoignage</Form.Label>
-                    <Form.Control as="textarea" rows={3} placeholder="Entrez votre témoignage" />
-                  </Form.Group>
-                  <Button variant="primary" type="submit">Soumettre</Button>
-                </Form>
-              </Card.Body>
-            </Card>
+                </Col>
+              ))}
+            </Row>
           </Col>
+          <Card className="h-100">
+                          <Card.Body>
+                            <Card.Text>Votre témoignage</Card.Text>
+                            <Form>
+                              <Form.Group >
+                                <Form.Label>Votre nom</Form.Label>
+                                <Form.Control type="text" placeholder="Entrez votre nom" />
+                              </Form.Group>
+                              <Form.Group >
+                                <Form.Label>Votre témoignage</Form.Label>
+                                <Form.Control as="textarea" rows={3} placeholder="Entrez votre témoignage" />
+                              </Form.Group>
+                              <br />
+                              <Button variant="primary" type="submit">Soumettre</Button>
+                            </Form>
+                          </Card.Body>
+                        </Card>
         </Row>
       </Container>
     </div>
