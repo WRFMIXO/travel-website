@@ -9,6 +9,7 @@ import NewsletterSection from "../../components/newsletter/NewsLetter";
 import Footer from "../../components/footer/Footer";
 import VisaInformationsMinimal from "../../components/visasInformations/VisaInfoMinimal";
 import PartnersSection from "../../components/partners/Partners";
+import ResultsTestimonialsSection from "../../components/results/Results";
 const Homepage = () => {
 
     return (
@@ -46,6 +47,9 @@ const Homepage = () => {
                 <PartnersSection />
             </div>
 
+            <div className="row mb-4"  style={{ margin: "8rem"}}>
+                <ResultsTestimonialsSection />
+            </div>
 
             <div className="row mb-4"  style={{ margin: "8rem"}}>
                 <NewsletterSection />

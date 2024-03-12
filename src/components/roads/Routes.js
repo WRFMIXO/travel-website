@@ -20,8 +20,8 @@ const WebsiteRoutes = () => {
                 </div>
             ) : (
                 <Routes>
-                    <Route path="/" element={ <Homepage /> } />
-                    <Route path="/visa-demands/" element={ <VisaDemands /> } />
+                    <Route path="/travel-website" element={ <Homepage /> } />
+                    <Route path="/travel-website/visa-demands/" element={ <VisaDemands /> } />
                 </Routes>
             )}
         </BrowserRouter>

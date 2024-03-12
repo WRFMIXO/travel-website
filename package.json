@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "gh-pages": "^6.1.1",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "react": "^18.2.0",
@@ -19,7 +20,9 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://wrfmixo.github.io/travel-website",
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

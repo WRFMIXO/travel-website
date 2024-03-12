@@ -17,10 +17,10 @@ function WebsiteNavbar() {
                     <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto">
                     <li className="nav-item">
-                        <NavLink className="nav-link" activeClassName="active" exact to="/">Accueil</NavLink>
+                        <NavLink className="nav-link" activeClassName="active" exact to="/travel-website/">Accueil</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" activeClassName="active" to="/visa-demands/">Demandes de Visas</NavLink>
+                    <NavLink className="nav-link" activeClassName="active" to="/travel-website/visa-demands/">Demandes de Visas</NavLink>
                     </li>
                     <li className="nav-item">
                     <NavLink className="nav-link" activeClassName="active" to="/services">Services</NavLink>
