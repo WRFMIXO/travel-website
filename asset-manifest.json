@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/travel-website/static/css/main.013b919a.css",
-    "main.js": "/travel-website/static/js/main.9bc17fb9.js",
+    "main.css": "/travel-website/static/css/main.dd9647fb.css",
+    "main.js": "/travel-website/static/js/main.25832f68.js",
     "static/js/213.11b408ad.chunk.js": "/travel-website/static/js/213.11b408ad.chunk.js",
     "static/js/732.e6129c03.chunk.js": "/travel-website/static/js/732.e6129c03.chunk.js",
     "static/js/453.b03e3c98.chunk.js": "/travel-website/static/js/453.b03e3c98.chunk.js",
@@ -19,19 +19,20 @@
     "static/media/Capture2.PNG": "/travel-website/static/media/Capture2.4bc8d0c1dccf12831ffc.PNG",
     "static/media/Capture3.PNG": "/travel-website/static/media/Capture3.c8594cb067433180a851.PNG",
     "static/media/Capture.PNG": "/travel-website/static/media/Capture.0a9991b6845306ba5bba.PNG",
+    "static/media/user.jpg": "/travel-website/static/media/user.c2bbc333b21542af9778.jpg",
     "static/media/slick.svg": "/travel-website/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/travel-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/travel-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/travel-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/travel-website/index.html",
-    "main.013b919a.css.map": "/travel-website/static/css/main.013b919a.css.map",
-    "main.9bc17fb9.js.map": "/travel-website/static/js/main.9bc17fb9.js.map",
+    "main.dd9647fb.css.map": "/travel-website/static/css/main.dd9647fb.css.map",
+    "main.25832f68.js.map": "/travel-website/static/js/main.25832f68.js.map",
     "213.11b408ad.chunk.js.map": "/travel-website/static/js/213.11b408ad.chunk.js.map",
     "732.e6129c03.chunk.js.map": "/travel-website/static/js/732.e6129c03.chunk.js.map",
     "453.b03e3c98.chunk.js.map": "/travel-website/static/js/453.b03e3c98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.013b919a.css",
-    "static/js/main.9bc17fb9.js"
+    "static/css/main.dd9647fb.css",
+    "static/js/main.25832f68.js"
   ]
 }
