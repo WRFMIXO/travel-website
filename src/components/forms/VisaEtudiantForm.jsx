@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import HeroSection from '../hero/HeroSection';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import { Button } from 'react-bootstrap';
+import { Button, FormControl } from 'react-bootstrap';
 
 
 function VisaForm() {
@@ -15,6 +15,28 @@ function VisaForm() {
     university: '',
     course: ''
   });
+
+  const countries = [
+    'CAMEROUN',
+    'MALI',
+    'SENEGAL',
+    "COTE D'IVOIRE",
+    "GUINNEE CONAKRY",
+    "REPUBLIQUE DEMOCRATIQUE DU CONGO",
+    "TCHAD",
+    "GABON",
+    "REPUBLIQUE CENTRAFRICAINE",
+  ];
+
+  const studyPrograms = [
+    'Licence 1',
+    'Licence 2',
+    'Licence 3',
+    'Master 1',
+    'Master 2',
+    'Bachelor Degree',
+    'Doctorat',
+  ];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -65,15 +87,47 @@ function VisaForm() {
         </div>
         <div className="mb-3">
           <label htmlFor="country" className="form-label">Pays de résidence</label>
-          <input type="text" className="form-control" id="country" name="country" value={formData.country} onChange={handleChange} required />
+          <FormControl 
+            as="select"
+            type='text'
+            id="counrty"
+            name="country"
+            value={formData.country}
+            onChange={handleChange}
+            className='form-select'
+            defaultValue="def"
+          >
+            <option value="def">Choisissez un pays</option>
+            {countries.map((country, index) => {
+              return (
+                <option key={index}>{country}</option>
+              )
+            })}
+          </FormControl>
         </div>
         <div className="mb-3">
           <label htmlFor="university" className="form-label">Université souhaitée</label>
           <input type="text" className="form-control" id="university" name="university" value={formData.university} onChange={handleChange} required />
         </div>
         <div className="mb-3">
-          <label htmlFor="course" className="form-label">Programme d'études</label>
-          <input type="text" className="form-control" id="course" name="course" value={formData.course} onChange={handleChange} required />
+          <label htmlFor="course" className="form-label">Programme d'étude</label>
+          <FormControl 
+            as="select"
+            type='text'
+            id="course"
+            name="course"
+            value={formData.course}
+            onChange={handleChange}
+            defaultValue="def"
+            className='form-select'
+          >
+            <option value="def">Liste des programmes</option>
+            {studyPrograms.map((program, index) => {
+              return (
+                <option key={index}>{program}</option>
+              )
+            })}
+          </FormControl>
         </div>
         <button type="submit" className="btn btn-primary">Soumettre</button>
       </form>

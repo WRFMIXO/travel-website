@@ -27,7 +27,7 @@ const ClientSidebar = () => {
     
     const applicationLogout = async() => {
         try {
-            const response = await axios.get("http://127.0.0.1:8000/users/logout/", {
+            const response = await axios.get("http://16.171.40.180:8000/users/logout/", {
                 headers : {
                     'X-CSRFToken': csrftoken,
                 }

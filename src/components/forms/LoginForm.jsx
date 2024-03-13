@@ -44,7 +44,7 @@ let csrftoken = getCookie('csrftoken');
     // Ajoute ici la logique de connexion
     setLoading(true);
     try {
-      const response = await axios.post("http://16.171.142.69:8000/users/login/", {
+      const response = await axios.post("http://16.171.40.180:8000/users/login/", {
         username: userData.email,
         password: userData.password,
       }, {
@@ -58,6 +58,8 @@ let csrftoken = getCookie('csrftoken');
         setTimeout(() => {
           navigate("/travel-website/myspace/dashboard/");
         }, 1000);
+      } else {
+        toast.error("Une erreur innatendue nous empêche de continuer");
       }
     } catch (error) {
       switch (error?.response.status) {
@@ -89,10 +91,12 @@ let csrftoken = getCookie('csrftoken');
       <ToastContainer />
       <Row className="justify-content-center align-items-center" style={{ height: "100vh"}}>
         <Card style={{ width: "500px"}} className="text-center">
+        <a href='/travel-website/' className='btn btn' style={{ width: "50px", border: "none"}}><i className='bi bi-arrow-left'></i></a>
         <Col>
+        <br /> <br />
           <h2 className="text-center" style={{ fontSize: "45px", textAlign: "justify"}}><span style={{ color: "mediumslateblue"}}>Connectez-vous </span><br /><p style={{ color:"seagreen", fontSize: "25px"}}>A votre espace client</p></h2>
           <br />
-          <Form onSubmit={handleLogin}>
+          <Form onSubmit={handleLogin} style={{ padding: "2rem"}}>
             <Form.Group controlId="formEmail">
               <Form.Label style={{ float: "left"}}>Nom d'utilisateur</Form.Label>
               <Form.Control name="email" value={userData.email} onChange={(e) => handlechangeData(e)} type="text" placeholder="Entrez votre adresse e-mail" required />
@@ -115,6 +119,9 @@ let csrftoken = getCookie('csrftoken');
                 "Se connecter"
               )}
             </Button>
+            <br />
+            <p className='text-center'>Pas encore de compte ? <a href="/travel-website/register/" className='text-center'>Inscrivez-vous</a></p>
+            <br />
             <br />
             <br />
             <h4>Connectez-vous avec</h4>

@@ -10,7 +10,7 @@ function Profile() {
 useEffect(() => {
     const fetchUserInfos = async () => {
         try {
-            const response = await axios.get(`http://127.0.0.1:8000/users/list/details/${localStorage.getItem("uid")}`);
+            const response = await axios.get(`http://16.171.40.180:8000/users/list/details/${localStorage.getItem("uid")}`);
             if (response.status >= 200 && response.status <= 300) {
                 const data = response.data;
                 setUserInformation(data); // Pas besoin de JSON.parse()

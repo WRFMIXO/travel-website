@@ -24,8 +24,8 @@ function HeroSection() {
                   />
                   <div className="overlay"></div>
                   <div className="carousel-caption">
-                    <h3>Titre de l'image 1</h3>
-                    <p>Description de l'image 1</p>
+                    <h3>Global Travel</h3>
+                    <p>Etudiez à l'étranger en toute sérénité</p>
                   </div>
                 </div>
               </Carousel.Item>
@@ -39,8 +39,8 @@ function HeroSection() {
                   />
                   <div className="overlay"></div>
                   <div className="carousel-caption">
-                    <h3>Titre de l'image 2</h3>
-                    <p>Description de l'image 2</p>
+                    <h3>Canada, USA, France...</h3>
+                    <p> La fiabilité de notre soutient a déjà ravi plus d'un</p>
                   </div>
                 </div>
               </Carousel.Item>
