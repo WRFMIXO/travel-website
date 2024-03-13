@@ -38,7 +38,7 @@ const SignUpForm = () => {
         }, 1000);
     } else {
         try {
-            const response = await axios.post("http://16.171.40.180:8000/users/register/", {
+            const response = await axios.post("http://16.171.24.180:8000/users/register/", {
                 username: formData.username,
                 email: formData.email,
                 password: formData.password,

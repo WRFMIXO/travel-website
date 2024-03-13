@@ -44,7 +44,7 @@ let csrftoken = getCookie('csrftoken');
     // Ajoute ici la logique de connexion
     setLoading(true);
     try {
-      const response = await axios.post("http://16.171.40.180:8000/users/login/", {
+      const response = await axios.post("http://16.171.24.180:8000/users/login/", {
         username: userData.email,
         password: userData.password,
       }, {
