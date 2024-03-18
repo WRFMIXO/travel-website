@@ -25,11 +25,11 @@ const WebsiteRoutes = () => {
             ) : (
                 <Routes>
                     <Route path="/travel-website" element={ <HomePage /> } />
-                    <Route path="/travel-website/processes/" element={ <ProcessesPage /> } />
-                    <Route path="/travel-website/services/" element={ <ServicesPage /> } />
-                    <Route path="/travel-website/team/" element={ <TeamPage /> } />
-                    <Route path="/travel-website/myspace/contacts/" element={ <ContactPage /> } />
-                    <Route path="/travel-website/myspace/faq/" element={ <FAQ /> } />
+                    <Route path="/travel-website/processes-page/" element={ <ProcessesPage /> } />
+                    <Route path="/travel-website/services-page/" element={ <ServicesPage /> } />
+                    <Route path="/travel-website/team-page/" element={ <TeamPage /> } />
+                    <Route path="/travel-website/contacts-page/" element={ <ContactPage /> } />
+                    <Route path="/travel-website/faq-page/" element={ <FAQ /> } />
                 </Routes>
             )}
         </BrowserRouter>

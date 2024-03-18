@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Avatar, Container, Toolbar, Typography } from '@mui/material';
 import { Button } from 'react-bootstrap';
 import "../../assets/Navbar.css";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -47,22 +48,22 @@ const Navbar = () => {
 
                     <ul className='text-center' style={{ display: 'flex', listStyleType: 'none', padding: 0 }}>
                         <li className='nav-link'>
-                            <a href="/travel-website/"><i className='bi bi-house'></i> Accueil </a>
+                            <NavLink to="/travel-website/"><i className='bi bi-house'></i> Accueil </NavLink>
                         </li>
                         <li className='nav-link'>
-                            <a href="/travel-website/processes/"> <i className='bi bi-bar-chart-steps'></i>Procédure</a>
+                            <NavLink to="/travel-website/processes-page/"> <i className='bi bi-bar-chart-steps'></i>Procédure</NavLink>
                         </li>
                         <li className='nav-link'>
-                            <a href="/travel-website/services/"> <i className='bi bi-person-workspace'></i>Nos Services</a>
+                            <NavLink to="/travel-website/services-page/"> <i className='bi bi-person-workspace'></i>Nos Services</NavLink>
                         </li>
                         <li className='nav-link'>
-                            <a href="/travel-website/team/"> <i className='bi bi-microsoft-teams'></i>Equipe</a>
+                            <NavLink to="/travel-website/team-page/"> <i className='bi bi-microsoft-teams'></i>Equipe</NavLink>
                         </li>
                         <li className='nav-link'>
-                            <a href="/travel-website/contacts/"> <i className='bi bi-headphones'></i>Contacts</a>
+                            <NavLink to="/travel-website/contacts-page/"> <i className='bi bi-headphones'></i>Contacts</NavLink>
                         </li>
                         <li className='nav-link'>
-                            <a href="/travel-website/faq/"> <i className='bi bi-patch-question'></i>F A Q</a>
+                            <NavLink to="/travel-website/faq-page/"> <i className='bi bi-patch-question'></i>F A Q</NavLink>
                         </li>
                     </ul>
                     
