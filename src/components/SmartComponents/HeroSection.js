@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, Button } from '@mui/material';
 import "../../assets/HeroSection.css";
 
-const HeroSection = () => {
+const HeroSection = ({ pageTitle }) => {
 
     return (
         <div style={{ background: "#333", backgroundSize: 'cover', backgroundPosition: 'center', height: 'calc(100vh - 64px)', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -12,6 +12,7 @@ const HeroSection = () => {
                         <Typography variant="h1" gutterBottom className='title'> 
                             GLOBAL TRAVEL
                         </Typography>
+                        <Typography variant='h3' gutterBottom className='title'>{pageTitle}</Typography>
                         <Typography variant="body1" paragraph>
                             Nous vous accompagnons pendant toute votre procédure et voyagez sans stress
                         </Typography>

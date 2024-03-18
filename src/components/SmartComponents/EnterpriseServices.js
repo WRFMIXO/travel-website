@@ -98,7 +98,7 @@ function ServicePresentationSection() {
 
                     <Grid spacing={10} alignItems="center" justifyContent="center" style={{ border: "none", textAlign: "center"}}>
                         <Button variant="contained" className='actionButton' style={{margin: "4rem", marginTop: "5rem", marginBottom: "-5rem"}}>
-                        <a href='/travel-website/services/' style={{ color: "white", textDecoration: "none",}}>Consulter le catalogue des services</a><i className='bi bi-caret-right' style={{ marginLeft: "10px"}}></i>
+                        <a href='/travel-website/services/' style={{ color: "white", textDecoration: "none",}}>Télécharger le catalogue des services</a><i className='bi bi-caret-right' style={{ marginLeft: "10px"}}></i>
                         </Button>
                     </Grid>
                     
