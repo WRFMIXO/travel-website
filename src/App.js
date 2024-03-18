@@ -1,10 +1,11 @@
 import './App.css';
-import WebsiteRoutes from './components/roads/Routes';
+import ApplicationRoutes from './Routes';
+import Navbar from './components/SmartComponents/Navbar';
 
 function App() {
     return (
         <div>
-            <WebsiteRoutes />
+            <ApplicationRoutes />
         </div>
     );
 }

@@ -1,0 +1,19 @@
+.title {
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    color: mediumslateblue;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 10%;
+        transform: translateY(25%);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
