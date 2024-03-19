@@ -7,6 +7,8 @@ import ServicesPage from "./pages/ServicesPage";
 import TeamPage from "./pages/TeamPage";
 import ContactPage from "./pages/ContactPage";
 import FAQ from "./pages/FaqPage";
+import LoginPage from "./pages/LoginPage";
+import SignUpPage from "./pages/SignUpPage";
 
 const WebsiteRoutes = () => {
     const [loading, setLoading] = useState(true);
@@ -30,6 +32,8 @@ const WebsiteRoutes = () => {
                     <Route path="/travel-website/team-page/" element={ <TeamPage /> } />
                     <Route path="/travel-website/contacts-page/" element={ <ContactPage /> } />
                     <Route path="/travel-website/faq-page/" element={ <FAQ /> } />
+                    <Route path="/travel-website/signin/" element={ <LoginPage /> } />
+                    <Route path="/travel-website/register/" element={ <SignUpPage /> } />
                 </Routes>
             )}
         </BrowserRouter>

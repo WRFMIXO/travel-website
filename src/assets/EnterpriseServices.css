@@ -14,13 +14,13 @@
 .services-title {
     animation-duration: 10s;
     animation-name: slideinServices;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
 
 .services-paragraph {
     animation-duration: 10s;
     animation-name: slideinServices;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
 
 .services-card {

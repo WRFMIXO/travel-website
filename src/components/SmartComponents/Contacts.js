@@ -14,6 +14,8 @@ function ContactUs() {
         email: "",
     });
 
+
+    
     const submitForm = async (e) => {
 
         e.preventDefault();
@@ -35,33 +37,33 @@ function ContactUs() {
                 toast.warning(response.data.message);
             }
         } catch (error) {
-            switch (error?.response) {
+            switch (error?.response.status) {
                 case 400:
-                    toast.error(error?.response.data.message);
+                    error?.response.data.message ? (toast.error(error?.response.data.message)) : (toast.error("Les informations soumises ne sont pas celles attendues!"));
                     setTimeout(() => {
                         setLoading(false);
                     }, 2000);
                     break;
                 case 500:
-                    toast.error(error?.response.data.message);
+                    error?.response.data.message ? (toast.error(error?.response.data.message)) : (toast.error("Nous rencontrons des difficultés! Réessayez plus tard!"));
                     setTimeout(() => {
                         setLoading(false);
                     }, 2000);
                     break;
                 case 404:
-                    toast.error(error?.response.data.message);
+                    error?.response.data.message ? (toast.error(error?.response.data.message)) : (toast.error("La ressource demandée n'est pas disponible actuellement!"));
                     setTimeout(() => {
                         setLoading(false);
                     }, 2000);
                     break;
                 case 403:
-                    toast.error(error?.response.data.message);
+                    error?.response.data.message ? (toast.error(error?.response.data.message)) : (toast.error("Vous n'avez pas le droit d'accéder à ces données!"));
                     setTimeout(() => {
                         setLoading(false);
                     }, 2000);
                     break;
                 case 401:
-                    toast.error(error?.response.data.message);
+                    error?.response.data.message ? (toast.error(error?.response.data.message)) : (toast.error("Non autorisé"));
                     setTimeout(() => {
                         setLoading(false);
                     }, 2000);
@@ -74,10 +76,6 @@ function ContactUs() {
                     }, 2000);
                     break;
             }
-            setTimeout(() => {
-                setLoading(false);
-                toast.error("Impossible d'envoyer le mail");
-            }, 2000);
         }
     }
 

@@ -1,7 +1,7 @@
 .title {
     animation-duration: 10s;
     animation-name: slidein;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
     color: mediumslateblue;
 }
 

@@ -3,15 +3,15 @@ import Navbar from "../components/SmartComponents/Navbar";
 import HeroSection from "../components/SmartComponents/HeroSection";
 import Footer from "../components/SmartComponents/Footer";
 import BackToTop from "../components/DumbComponents/BackToTop";
-import LoginForm from "../components/SmartComponents/LoginForm";
+import SignUpForm from "../components/SmartComponents/SignUpForm";
 
-const LoginPage = () => {
+const SignUpPage = () => {
 
     return (
         <div>
             <Navbar />
-            <HeroSection pageTitle="Connexion" toReach="#loginForm" />
-            <LoginForm />
+            <HeroSection pageTitle="Inscription" toReach="#signUpForm" />
+            <SignUpForm />
             <br />
             <br />
             <br />
@@ -21,4 +21,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default SignUpPage;

@@ -12,7 +12,7 @@ const Navbar = () => {
 
     // Fonction pour rediriger vers la page de connexion
     function redirectToLogin() {
-        window.location.assign("/travel-website/login/");
+        window.location.assign("/travel-website/signin/");
     }
 
     // Fonction pour rediriger vers la page d'inscription
