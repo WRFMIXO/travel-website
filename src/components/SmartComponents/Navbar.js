@@ -59,7 +59,7 @@ const Navbar = () => {
                         {isLoggedIn ? userDisplay : (
                             <>
                                 <Button className='navbuttons' size='sm' style={{background: "darkslategray", width: "100px", margin: "3px"}} ><NavLink to="/travel-website/signin/" style={{textDecoration: "none", color: "white"}}>Se connecter</NavLink></Button>
-                                <Button className='navbuttons' size='sm' style={{background: "darkslateblue", width: "100px", margin: "3px"}} ><NavLink to="/travel-website/signin/" style={{textDecoration: "none", color: "white"}}>S'inscrire</NavLink></Button>
+                                <Button className='navbuttons' size='sm' style={{background: "darkslateblue", width: "100px", margin: "3px"}} ><NavLink to="/travel-website/register/" style={{textDecoration: "none", color: "white"}}>S'inscrire</NavLink></Button>
                             </>
                         )}
                     </ul>
