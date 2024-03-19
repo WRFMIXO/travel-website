@@ -10,22 +10,6 @@ const Navbar = () => {
     const [username, setUsername] = useState(""); 
     const [userImage, setUserImage] = useState(""); 
 
-    // Fonction pour rediriger vers la page de connexion
-    function redirectToLogin() {
-        window.location.assign("/travel-website/signin/");
-    }
-
-    // Fonction pour rediriger vers la page d'inscription
-    function redirectToSignUp() {
-        window.location.assign("/travel-website/register/");
-    }
-
-    // Fonction pour se déconnecter
-    function logout() {
-        // Effectuer toutes les actions nécessaires pour se déconnecter (par exemple, vider le token JWT, etc.)
-        setIsLoggedIn(false); // Mettre à jour l'état pour indiquer que l'utilisateur est déconnecté
-    }
-
     const userDisplay = (
         <div className="d-flex align-items-center">
             <span className="me-2">{username}</span>
@@ -74,8 +58,8 @@ const Navbar = () => {
                         {/* Affiche le nom d'utilisateur et l'avatar si l'utilisateur est connecté */}
                         {isLoggedIn ? userDisplay : (
                             <>
-                                <Button className='navbuttons' size='sm' style={{background: "darkslategray", width: "100px", margin: "3px"}} onClick={redirectToLogin}>Se connecter</Button>
-                                <Button className='navbuttons' size='sm' style={{background: "darkslateblue", width: "100px", margin: "3px"}} onClick={redirectToSignUp}>S'inscrire</Button>
+                                <Button className='navbuttons' size='sm' style={{background: "darkslategray", width: "100px", margin: "3px"}} ><NavLink to="/travel-website/signin/" style={{textDecoration: "none", color: "white"}}>Se connecter</NavLink></Button>
+                                <Button className='navbuttons' size='sm' style={{background: "darkslateblue", width: "100px", margin: "3px"}} ><NavLink to="/travel-website/signin/" style={{textDecoration: "none", color: "white"}}>S'inscrire</NavLink></Button>
                             </>
                         )}
                     </ul>
