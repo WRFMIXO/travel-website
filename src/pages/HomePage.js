@@ -15,7 +15,7 @@ const HomePage = () => {
     return (
         <div>
             <Navbar />
-            <HeroSection pageTitle="Accueil"/>
+            <HeroSection pageTitle="Accueil" toReach="#aboutentreprise" />
             <AgencyPresentationSection />
             <ServicePresentationSection />
             <DestinationsCoveredSection />

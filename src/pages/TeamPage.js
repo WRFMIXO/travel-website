@@ -12,7 +12,7 @@ const TeamPage = () => {
     return (
         <div>
             <Navbar />
-            <HeroSection pageTitle="Equipe"/>
+            <HeroSection pageTitle="Equipe" toReach="#teamMembers" />
             <Team />
             <NewsletterSection />
             <BackToTop />

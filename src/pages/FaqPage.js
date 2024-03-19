@@ -10,7 +10,7 @@ const FAQ = () => {
     return (
         <div>
             <Navbar />
-            <HeroSection pageTitle="Foire aux questions"/>
+            <HeroSection pageTitle="Foire aux questions" toReach="#frequentQuestions" />
             <NewsletterSection />
             <BackToTop />
             <Footer />

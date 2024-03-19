@@ -13,7 +13,7 @@ const ServicesPage = () => {
     return (
         <div>
             <Navbar />
-            <HeroSection pageTitle="Services"/>
+            <HeroSection pageTitle="Services" toReach="#servicesList" />
             <ServicePresentationSection />
             <NewsletterSection />
             <BackToTop />

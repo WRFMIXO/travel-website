@@ -11,7 +11,7 @@ const Footer = () => {
                     {/* Colonne 1 */}
                     <Typography variant="h2"><i className='bi bi-browser-edge'></i></Typography>
                     <Typography variant="h6">GLOBAL TRAVEL</Typography>
-                    <Typography variant="body2" maxWidth={200}>Un accompagnement, un voyage sans stress</Typography>
+                    <Typography variant="body2" maxWidth={200}>Contactez nous et voyagez sans stress</Typography>
                     {/* Logo ici */}
                 </Grid>
                 <Grid item xs={12} sm={6} md={3}>
@@ -25,27 +25,27 @@ const Footer = () => {
                             </a>
                         </li>
                         <li style={{ margin: "5px"}}>
-                            <a style={{ textDecoration: "none"}} href='/travel-website/processes'>
+                            <a style={{ textDecoration: "none"}} href='/travel-website/processes-page/'>
                                 Procédure
                             </a>
                         </li>
                         <li style={{ margin: "5px"}}>
-                            <a style={{ textDecoration: "none"}} href='/travel-website/services'>
+                            <a style={{ textDecoration: "none"}} href='/travel-website/services-page/'>
                                 Services
                             </a>
                         </li>
                         <li style={{ margin: "5px"}}>
-                            <a style={{ textDecoration: "none"}} href='/travel-website/team'>
+                            <a style={{ textDecoration: "none"}} href='/travel-website/team-page/'>
                                 Equipe
                             </a>
                         </li>
                         <li style={{ margin: "5px"}}>
-                            <a style={{ textDecoration: "none"}} href='/travel-website/faq'>
+                            <a style={{ textDecoration: "none"}} href='/travel-website/faq-page/'>
                                 F A Q
                             </a>
                         </li>
                         <li style={{ margin: "5px"}}>
-                            <a style={{ textDecoration: "none"}} href='/travel-website/contact'>
+                            <a style={{ textDecoration: "none"}} href='/travel-website/contacts-page/'>
                                 Contacts
                             </a>
                         </li>

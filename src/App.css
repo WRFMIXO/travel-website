@@ -62,3 +62,9 @@
 a{
   text-decoration: none;
 }
+
+.contactFormCard {
+  padding: 2rem;
+  border: none;
+  background: #333;
+}

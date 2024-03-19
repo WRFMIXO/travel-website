@@ -14,7 +14,7 @@ function Team() {
         {initial: "EA",name: "Ekame A.", post: "Call Center", description: "Etre à l'écoute, comprendre le besoin et apporter des éléments de réponse satisfaisants sont ce qui me motive à continuer dans ce travail"},
     ]
     return (
-        <section className="services">
+        <section className="services" id='teamMembers'>
             <Container fluid style={{ width: "100%"}}>
                 <Paper className='paper' elevation={10} style={{ marginTop: "10rem", padding: "10rem", border: "none"}}>
                     <Grid spacing={10} alignItems="center" justifyContent="center" style={{ border: "none"}}>

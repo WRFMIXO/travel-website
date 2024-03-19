@@ -10,7 +10,7 @@ const ProcessesPage = () => {
     return (
         <div>
             <Navbar />
-            <HeroSection pageTitle="Procéssus"/>
+            <HeroSection pageTitle="Procéssus" toReach="#processesList" />
             <NewsletterSection />
             <BackToTop />
             <Footer />

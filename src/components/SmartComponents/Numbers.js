@@ -12,9 +12,9 @@ function Numbers() {
     ];
 
     const testimonials = [
-        { name: "Marie D.", quote: "Grâce à leur expertise, j'ai pu obtenir mon visa rapidement et facilement. Je recommande vivement leurs services!" },
-        { name: "Thomas B.", quote: "Leur équipe dévouée m'a accompagné à chaque étape de mon voyage. Un service exceptionnel!" },
-        { name: "Daniella B.", quote: "J'aurais aimé entrer en contact avec eux plus tôt. Mais aujourd'hui toute ma famille ne s'en remet qu'à eux. Très professionnels!" },
+        { name: "Marie D.", quote: "Grâce à leur expertise, j'ai pu obtenir mon visa rapidement et facilement. Je recommande vivement leurs services!", entreprise: "AXA Assurances" },
+        { name: "Thomas B.", quote: "Leur équipe dévouée m'a accompagné à chaque étape de mon voyage. Un service exceptionnel!", entreprise: "" },
+        { name: "Daniella B.", quote: "J'aurais aimé entrer en contact avec eux plus tôt. Mais aujourd'hui toute ma famille ne s'en remet qu'à eux. Très professionnels!", entreprise: "" },
       ];
 
     return (
@@ -64,8 +64,8 @@ function Numbers() {
                             {testimonials.map((data, index) => {
                                 return (
                                     <Col sm="12" md="4" lg="4" xl="4" key={index} style={{ marginTop: "1rem"}}>
-                                        <Card style={{padding: "6rem", border: "none", background: "whitesmoke", color: "#333", borderRadius: "100%"}}>
-                                            <CardBody style={{ justifyContent: "center", alignItems: "center"}}>
+                                        <Card style={{padding: "6rem", border: "none", background: "whitesmoke", color: "#333"}}>
+                                            <CardBody style={{ justifyContent: "center", alignItems: "center", height: "150px"}}>
                                                 <Typography variant='body2' className='paragraph'>
                                                     {data.quote}
                                                 </Typography>

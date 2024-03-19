@@ -10,9 +10,9 @@ import { Link } from 'react-router-dom';
 function ServicePresentationSection() {
     return (
         <section className="services">
-            <Container fluid style={{ width: "100%"}}>
-                <Paper className='paper' elevation={10} style={{ marginTop: "10rem", padding: "10rem", border: "none"}}>
-                    <Grid spacing={10} alignItems="center" justifyContent="center" style={{ border: "none"}}>
+            <Container fluid style={{ width: "100%"}} id='servicesList'>
+                <Paper className='paper' elevation={10} style={{ marginTop: "10rem", padding: "10rem", border: "none"}} >
+                    <Grid spacing={10} alignItems="center" justifyContent="center" style={{ border: "none"}} >
                         <Typography variant='h2' className='services-title' style={{ color: "mediumslateblue"}} maxWidth={550}>
                             Chez nous vous pourrez bénéficier...
                         </Typography>
